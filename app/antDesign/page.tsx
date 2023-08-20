@@ -1,9 +1,12 @@
+// `app/page.tsx` is the UI for the `/` URL
 'use client'
 
 import { Button, DatePicker } from 'antd'
-import AntDsiSpin, { useAntDsiSpin } from '@/components/antDesign/spin'
-import AntDsiButton, { useAntDsiButton } from '@/components/antDesign/button'
-import AntDsiInput, { useAntDsiInput } from '@/components/antDesign/input'
+import AntDsiSpin, { useAntDsiSpin } from '@/app/components/antDesign/spin'
+import AntDsiButton, { useAntDsiButton } from '@/app/components/antDesign/button'
+import AntDsiInput, { useAntDsiInput } from '@/app/components/antDesign/input'
+import Link from 'next/link'
+
 
 export default function AntDesign() {
   const [spin_tem, setTem_spin] = useAntDsiSpin()
@@ -12,6 +15,7 @@ export default function AntDesign() {
 
   return (
     <section className="ant-design">
+      <Link href="/">Home</Link>
       <div className="spin">
         <AntDsiSpin {...spin_tem}>
           <div className="content" />
