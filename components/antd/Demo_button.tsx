@@ -5,12 +5,12 @@ function Demo_button() {
 
   const [button_tem, setButton_tem] = useState({
     // type: 'primary', /** FIXME: 若為 default 可以刪除 */
+    onClick: () => {
+    }
   })
 
   return (
-    <div>
-      <AntDButton {...button_tem}>儲存</AntDButton>
-    </div>
+    <AntDButton {...button_tem}>儲存</AntDButton>
   )
 }
 

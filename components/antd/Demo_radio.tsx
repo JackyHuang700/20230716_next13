@@ -8,6 +8,9 @@ function Demo_radio() {
 
   const [radioVal_tem, setRadioVal_tem] = useState('')
   const [radio_tem, setRadio_tem] = useState({
+    onChange: (val) => {
+      setRadioVal_tem(val)
+    }
   })
 
 
@@ -26,7 +29,6 @@ function Demo_radio() {
       <AntDRadio
         {...radio_tem}
         value={radioVal_tem}
-        onChange={setRadioVal_tem}
       >
         <Radio value={''}>未選擇</Radio>
         <Radio value={1}>A</Radio>

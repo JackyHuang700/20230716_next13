@@ -10,6 +10,9 @@ function Demo_input() {
     /**  allowClear: false, */
     /** showCount: false, */
     /* type: 'inputNumber', // FIXME:　若為 input 可以刪除 */
+    onChange: (val) => {
+      setInputVal_tem(val)
+    }
   })
 
 
@@ -37,19 +40,16 @@ function Demo_input() {
       <AntDInput
         {...input_tem}
         value={inputVal_tem}
-        onChange={setInputVal_tem}
       />
       <AntDInput
         {...input_tem}
         type='textArea'
         value={inputVal_tem}
-        onChange={setInputVal_tem}
       />
       <AntDInput
         {...input_tem}
         type='inputNumber'
         value={inputVal_tem}
-        onChange={setInputVal_tem}
       />
     </div>
   )
