@@ -8,6 +8,7 @@ import Demo_button from '@/components/antd/Demo_button'
 import Demo_switch from '@/components/antd/Demo_switch'
 import Demo_select from '@/components/antd/Demo_select'
 import Demo_spin from '@/components/antd/Demo_spin'
+import Demo_alert from '@/components/antd/Demo_alert'
 /* // import { Input } from 'antd'; */
 
 
@@ -27,6 +28,7 @@ function AntDDemo() {
       <Demo_switch />
       <Demo_select />
       <Demo_spin />
+      <Demo_alert />
 
     </div>
   )
